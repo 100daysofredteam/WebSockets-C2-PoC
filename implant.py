@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 implant.py - WebSocket implant that supports job_id, base64-encoded cmd & args, chunked base64 results,
 and a whitelist of cross-platform commands:
@@ -7,7 +6,10 @@ and a whitelist of cross-platform commands:
 Note: This is AI generated code provided as a proof of concept for educational purposes only.   
 
 Usage:
-    python implant.py --id myimplant001 --server ws://127.0.0.1:8765 --beacon 10 --chunk 4096
+    python implant.py --id myimplant001 --server ws://127.0.0.1:8765 --beacon 10 --chunk 1024
+
+    If running with relay:
+    python implant.py --id myimplant001 --server ws://127.0.0.1:9000 --beacon 10 --chunk 1024
 """
 import asyncio
 import json
