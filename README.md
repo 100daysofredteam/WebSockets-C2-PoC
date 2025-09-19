@@ -1,4 +1,4 @@
-# WebSockets C2 PoC
+# Leveraging WebSockets for Command and Control (C2) Communication - A Proof of Concept
 
 Let me start by saying that this is an absolutely basic proof of concept of a miniature command and control (C2) that leverages WebSockets for communication.  Most of the code was generated via AI for experimentation (use it at your own risk, if you must) and provided here only for educational purposes.
 
