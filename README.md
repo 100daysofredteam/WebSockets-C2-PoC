@@ -2,5 +2,8 @@
 
 Let me start by saying that this is an absolutely basic proof of concept of a miniature command and control (C2) that leverages WebSockets for communication.  Most of the code was generated via AI (use it at your own risk, if you must) for experimentation and provided here only for educational purposes.
 
+### Run the server
+`python server.py`
 
-
+### Run the implant
+`python impant.py --id myimplant001 --server ws://127.0.0.1:8765 --beacon 10
