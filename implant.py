@@ -242,6 +242,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     try:
-        asyncio.run(run_implant(args.id, args.server, args.beacon, args.chunk))
+        asyncio.run(run_implant(args.id, args.server, args.beacon))
     except KeyboardInterrupt:
         print("Implant stopped")
