@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 implant.py - WebSocket implant that supports job_id, base64-encoded cmd & args, chunked base64 results,
 and a whitelist of cross-platform commands:
