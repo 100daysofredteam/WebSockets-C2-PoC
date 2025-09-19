@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 
 CONNECTED = {}  # client_id -> websocket
 JOBS = defaultdict(lambda: {"chunks": {}, "received": 0, "final_seq": None, "meta": None})
-DEFAULT_CHUNK_SIZE = 1024 * 4  # suggestion (4KB base64-string chunks)
+DEFAULT_CHUNK_SIZE = 1024  # suggestion (4KB base64-string chunks)
 
 async def handle_client(ws, path):
     client_id = None
